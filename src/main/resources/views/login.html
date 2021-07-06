@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+<div>
+    <p class="title">登录</p>
+    <form name="loginForm" method="post" th:action="${loginUrl}">
+        <label>
+            <input type="text" name="username" placeholder="用户名"/>
+        </label>
+        <br>
+        <label>
+            <input type="password" name="password" placeholder="密码"/>
+        </label>
+        <br>
+        <button type="submit" class="btn">登录</button>
+    </form>
+    <a href="/oauth2/register">去注册</a>
+    <p style="color: red" th:if="${param.error}" th:text="${error}">
+    </p>
+</div>
+</body>
+</html>
