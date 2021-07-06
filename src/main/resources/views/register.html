@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Spring Boot User Authentication</title>
+</head>
+<body>
+<form role="form" th:action="@{/oauth2/register}" th:method="post">
+    <input type="text" placeholder="用户名" name="userName"/><br>
+    <input type="text" placeholder="邮箱" name="email"><br>
+    <input type="password" placeholder="密码" name="password"/><br>
+    <input type="submit"/> <br>
+    <a href="/oauth2/login">去登录</a>
+</form>
+</body>
+</html>

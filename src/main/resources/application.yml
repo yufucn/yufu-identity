@@ -1,0 +1,21 @@
+server:
+  port: 3000
+spring:
+  thymeleaf:
+    prefix: classpath:/views/
+    suffix: .html
+    cache: false
+  application:
+    name: yufu-identity
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/yufu-identity?characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: root
+    hikari:
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
