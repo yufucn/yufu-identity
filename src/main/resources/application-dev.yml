@@ -1,0 +1,6 @@
+spring:
+  thymeleaf:
+    cache: false
+  resources:
+    static-locations: file:src/main/resources/static/
+
