@@ -4,10 +4,17 @@
     <title>Spring Boot User Authentication</title>
 </head>
 <body>
+<p class="title">注册</p>
 <form role="form" th:action="@{/oauth2/register}" th:method="post">
-    <input type="text" placeholder="用户名" name="userName"/><br>
-    <input type="text" placeholder="邮箱" name="email"><br>
-    <input type="password" placeholder="密码" name="password"/><br>
+    <label>
+        <input type="text" placeholder="用户名" name="userName"/>
+    </label><br>
+    <label>
+        <input type="text" placeholder="邮箱" name="email">
+    </label><br>
+    <label>
+        <input type="password" placeholder="密码" name="password"/>
+    </label><br>
     <input type="submit"/> <br>
     <a href="/oauth2/login">去登录</a>
 </form>

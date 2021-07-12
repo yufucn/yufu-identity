@@ -1,10 +1,11 @@
 server:
   port: 3000
 spring:
+  profiles:
+    default: dev
   thymeleaf:
     prefix: classpath:/views/
     suffix: .html
-    cache: false
   application:
     name: yufu-identity
   jpa:
