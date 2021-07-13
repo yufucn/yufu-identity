@@ -10,8 +10,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * Jwt Token 扩展信息
+ *
  * @author wang
- * @date 2021/6/27 18:47
+ * @date  2021/7/13 22:30
  */
 public class JwtTokenEnhancer implements TokenEnhancer {
 

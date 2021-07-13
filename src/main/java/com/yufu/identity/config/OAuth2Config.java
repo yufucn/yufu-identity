@@ -19,8 +19,10 @@ import javax.sql.DataSource;
 import java.util.ArrayList;
 
 /**
+ * OAuth2配置
+ *
  * @author wang
- * @date 2021/6/27 18:44
+ * @date  2021/7/13 22:31
  */
 @Configuration
 @EnableAuthorizationServer

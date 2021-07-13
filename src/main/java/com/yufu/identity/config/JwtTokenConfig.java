@@ -9,7 +9,10 @@ import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenCo
 import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 
 /**
+ * Jwt Token 配置
+ *
  * @author wang
+ * @date  2021/7/13 22:30
  */
 @Configuration
 public class JwtTokenConfig {

@@ -14,6 +14,8 @@ import org.springframework.stereotype.Component;
 import javax.annotation.Resource;
 
 /**
+ * 认证流程扩展
+ *
  * @author wang
  * @date 2021/7/5 22:46
  */

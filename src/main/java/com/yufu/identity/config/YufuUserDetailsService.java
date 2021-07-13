@@ -13,7 +13,10 @@ import java.text.MessageFormat;
 import java.util.Locale;
 
 /**
+ * UserDetailsService扩展
+ *
  * @author wang
+ * @date 2021/7/5 22:46
  */
 @Component(value = "yufuUserDetailsService")
 public class YufuUserDetailsService implements UserDetailsService {

@@ -6,6 +6,8 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 /**
+ * web静态资源配置
+ *
  * @author wang
  * @date 2021/7/12 23:38
  */
