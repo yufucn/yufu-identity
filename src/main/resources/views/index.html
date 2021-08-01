@@ -1,12 +1,12 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>身份中台</title>
-    <link th:href="@{/css/tabler.min.css}" rel="stylesheet"/>
-</head>
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<header th:replace="fragment/shared.html :: yufuHead('首页2')"></header>
 <body class="antialiased">
+<div sec:authorize="isAuthenticated()">
+    This content is only shown to authenticated users.
+</div>
 <div class="wrapper">
     <header class="navbar navbar-expand-md navbar-light d-print-none">
         <div class="container-xl">
@@ -20,19 +20,18 @@
             </h1>
             <div class="navbar-nav flex-row order-md-last">
                 <div class="nav-item d-none d-md-flex me-3">
-                    <div class="btn-list">
-                        <a href="" class="btn btn-primary" target="_blank" rel="noreferrer">
-                            登录
-                        </a>
-                        <a href="" class="btn btn-outline-white" target="_blank" rel="noreferrer">
-                            注册
-                        </a>
-                    </div>
+                    <a href="/oauth2/login" class="btn btn-primary" target="_blank" rel="noreferrer">
+                        登录
+                    </a>
+                    <a href="/oauth2/register" class="btn btn-outline-white" target="_blank" rel="noreferrer">
+                        注册
+                    </a>
                 </div>
             </div>
         </div>
     </header>
 </div>
+<footer th:replace="fragment/shared.html :: #yufuFooter"></footer>
 <script th:src="@{/js/tabler.min.js}"></script>
 </body>
 </html>
