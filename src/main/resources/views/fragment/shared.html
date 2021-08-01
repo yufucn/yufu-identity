@@ -1,11 +1,15 @@
-<head>
+<head th:fragment="yufuHead(pageTitle)">
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>登录 - 身份中台</title>
+    <title th:text="${pageTitle} + ' - 身份中台'"></title>
     <link th:href="@{/css/tabler.min.css}" rel="stylesheet"/>
     <link th:href="@{/css/tabler-flags.min.css}" rel="stylesheet"/>
     <link th:href="@{/css/tabler-payments.min.css}" rel="stylesheet"/>
     <link th:href="@{/css/tabler-vendors.min.css}" rel="stylesheet"/>
     <link th:href="@{/css/demo.min.css}" rel="stylesheet"/>
 </head>
+
+<footer id="yufuFooter">
+    Copyright © 2021 - 2021 Yufu. All Rights Reserved
+</footer>

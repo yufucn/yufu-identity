@@ -1,26 +1,15 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>登录 - 身份中台</title>
-    <!-- CSS files -->
-    <link th:href="@{/css/tabler.min.css}" rel="stylesheet"/>
-    <link th:href="@{/css/tabler-flags.min.css}" rel="stylesheet"/>
-    <link th:href="@{/css/tabler-payments.min.css}" rel="stylesheet"/>
-    <link th:href="@{/css/tabler-vendors.min.css}" rel="stylesheet"/>
-    <link th:href="@{/css/demo.min.css}" rel="stylesheet"/>
-</head>
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<header th:replace="fragment/shared.html :: yufuHead('登录')"></header>
 <body class="antialiased border-top-wide border-primary d-flex flex-column">
 <div class="page page-center">
     <div class="container-tight py-4">
         <div class="text-center mb-4">
-            <a href="."><img th:src="@{/img/logo.png}" height="80" alt=""></a>
+            <a href="."><img th:src="@{/img/logo.png}" height="80" alt=""/></a>
         </div>
         <form name="loginForm" class="card card-md" th:action="${loginUrl}" method="post" autocomplete="off">
             <div class="card-body">
-                <h2 class="card-title text-center mb-4"></h2>
+                <h2 class="card-title text-center mb-4">登录</h2>
                 <div class="mb-3">
                     <label class="form-label">账号或邮箱</label>
                         <input type="text" name="username" class="form-control" placeholder="账号或邮箱" />
@@ -36,7 +25,7 @@
                         <input type="checkbox" class="form-check-input"/>
                         <span class="form-check-label">记住登录</span>
                         <span class="form-label-description">
-                          <a href="./forgot-password.html">忘记密码</a>
+                          <a href=".">忘记密码</a>
                         </span>
                     </label>
                 </div>
@@ -50,10 +39,11 @@
             </div>
         </form>
         <div class="text-center text-muted mt-3">
-            还没有账号? <a href="./sign-up.html" tabindex="-1">立即注册</a>
+            还没有账号? <a href="/oauth2/register" tabindex="-1">立即注册</a>
         </div>
     </div>
 </div>
+<footer th:replace="fragment/shared.html :: #yufuFooter"></footer>
 <script th:src="@{/js/tabler.min.js}"></script>
 </body>
 </html>

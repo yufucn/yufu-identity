@@ -30,7 +30,7 @@ public class YufuUserDetailsService implements UserDetailsService {
         this.passwordEncoder = passwordEncoder;
     }
 
-    //http://localhost:3000/oauth/authorize?client_id=user-client&response_type=code&scope=all&redirect_uri=http://www.baidu.com
+    //http://localhost:5000/oauth/authorize?client_id=user-client&response_type=code&scope=all&redirect_uri=http://www.baidu.com
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         var optionalUser = yufuUserRepository.findByUserName(username);
