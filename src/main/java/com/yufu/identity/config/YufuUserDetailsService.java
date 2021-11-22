@@ -53,6 +53,7 @@ public class YufuUserDetailsService implements UserDetailsService {
         user.setAccountNonLocked(true);
         user.setAccountNonExpired(true);
         user.setCredentialsNonExpired(true);
+        user.setAccessFailedCount(0);
         user.setNormalizedUserName(user.getUsername().toUpperCase(Locale.ROOT));
         user.setNormalizedEmail(user.getEmail().toUpperCase(Locale.ROOT));
         yufuUserRepository.save(user);
