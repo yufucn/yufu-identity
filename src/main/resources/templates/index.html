@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="https://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <title>Hello Security</title>
 </head>
 <body>
-$END$
+<div>
+    <h1>登陆成功</h1>
+    <form th:action="@{/logout}" method="post">
+        <input type="submit" value="Logout"/>
+    </form>
+</div>
 </body>
 </html>
